@@ -1,0 +1,40 @@
+@use 'preset';
+$font:#f5f5f5;
+$background-color:rgb(0, 0, 0); 
+a,li{
+    text-decoration: none;
+    list-style-type: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.flex-center{
+    @include preset.flex-center;
+    justify-content: center;
+}
+.navbar{
+    border-radius: 5pt;
+    padding: 15px 30px;
+    margin: 10px 50px;
+    background-color:$background-color; 
+    @include preset.flex-center;
+    justify-content: space-around;
+    &-logo{
+        h1{
+            color: $font;
+        }
+    }
+    &-list{
+
+        li{
+            a{
+                padding: 0 15px;
+                color: $font;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.tab {
+    display: none;
+  }
+  .tab:target {
+    display: block;
+  }
+  .tab:last-child {
+    display: block;
+  }
+  .tab:target ~ section.tab:last-child {
+    display: none;
+  }
+  .tab > nav > a.active {
+    color: teal;
+    border-bottom-color: teal;
+  }
+  
+  /* Layout */
+  main {
+    max-width: 300px;
+  }
+  .tab > * {
+    width:100%;
+    padding-top: 10px;
+    margin: 0;
+  }
+  .tab > nav {
+    padding: 0;
+    display: flex;
+  }
+  .tab > nav > a {
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 5px solid gray;
+    margin: 0;
+    padding: 10px;
+  }
+  .tab > nav::before {
+    content: "";
+    width: 5px;
+    border-bottom: 5px solid gray;
+  }
+  .tab > nav::after {
+    content: "";
+    flex: 1;
+    border-bottom: 5px solid gray;
+  }
+  

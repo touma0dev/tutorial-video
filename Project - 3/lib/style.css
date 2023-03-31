@@ -1,0 +1,37 @@
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.navbar {
+  border-radius: 5pt;
+  padding: 15px 30px;
+  margin: 10px 50px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.navbar-logo h1 {
+  color: #f5f5f5;
+}
+.navbar-list li a {
+  padding: 0 15px;
+  color: #f5f5f5;
+}/*# sourceMappingURL=style.css.map */

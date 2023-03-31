@@ -1,0 +1,164 @@
+    @use 'preset';
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    $background:#530987;
+    $font: #ffffff;
+    $font-card:#b17ffc;
+    $card-p:#491084;
+    $background-card:#f6f3f9;
+    li,a{
+    text-decoration: none;
+    list-style-type:none ;
+    font-family: 'Roboto', sans-serif;
+    }
+    body{
+    background-color: $background; font-size: 18px;
+    }.background{
+        background-color: $background-card; 
+        border-radius: 5px
+    }
+    //Navbar
+        .navbar{
+            @include preset.flex-center;
+            justify-content: center;
+            &-section{
+                max-width: 1360px;
+                min-width: 300px;
+                &-logo{
+                    width: 1050px;
+                    h1{
+                        color: $font;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                   }
+                   &-list{
+                    li{
+                        a{
+                            color: $font;
+                            padding: 0 5px;
+                            font-weight:600;
+                        }
+                    }
+                }
+            }
+           
+        }
+        .flex-center{
+            @include preset.flex-center;
+            justify-content: center;
+        }
+        .image-header{
+            border-radius: 5px;
+            margin: 0 36px;
+            img{
+                max-width: 1350px;
+                min-width: 300px;
+            }
+        }
+main{
+  
+    .card-main-images{
+        img{
+            border-radius: 50px;
+            max-width:150px;
+            min-width: 300px;
+        }
+    }
+    .card-main{
+        background-color: $background-card;
+        border-radius: 5px;
+        max-width: 1200px;
+        min-width: 300px;
+        margin: 25px 36px;
+        &-content{
+            margin: 25px 36px;
+            max-width: 1350px;
+            color: $card-p;
+            font-weight:400;
+        &-list{
+            word-break: break-all;
+
+        p,li{
+            list-style-type: disc;
+            font-weight:400;
+            p{
+            font-weight:400;
+            }
+        }   
+        }
+            h1{
+                color: $font-card;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    
+    
+    }
+  
+   
+}
+.card-second-main{
+    &-imagens{
+        max-width: 1350px;
+    }
+    &-contener{
+        margin: 0px 110px;
+        word-break: break-all;
+
+        background-color: $background-card;
+    }
+}
+.card-thid-main{
+    max-width: 1200px;
+    margin: 15px 10px;
+    display: flex;
+    background-color: $background-card;
+    border-radius: 5px;
+    &-list{
+        max-width: 400px;
+        min-width: 30px;
+        .card-third-main-list-size{
+            margin: 10px 80px;
+            display: flex;
+            font-size: 14px;
+
+        }
+        max-width: 600px;
+        margin:0px 5px;
+        h1{
+            color: $font-card;
+            font-size: 30px;
+            font-weight: 700;
+        }   p,li{
+            list-style-type: disc;
+            font-weight:400;
+            p{
+            font-weight:400;
+            }
+        }   
+    }
+    &-image{
+        display: flex;
+        img{
+            border-radius: 50px;
+            min-width: 300px;
+        }
+    }
+}
+.forty-container{
+    background-color:$card-p;
+    max-width: 1200px;
+    border:  2px solid $font;
+    border-radius: 5px;
+    &-list{
+        margin: 30px;
+        word-break: break-all;
+        strong{
+            color: $font-card;
+        }
+        p{
+            color: $font-card;
+        }
+    }
+}
